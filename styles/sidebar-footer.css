@@ -1,0 +1,218 @@
+*{
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--black);
+    font-family: var(--font-dm-sans)
+}
+
+.sidebar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding: 12px;
+    width: 300px;
+}
+
+.sidebar__navegation{
+    background-color: var(--dark-gray);
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.logo{
+    background-color: var(--dark-gray);
+    display: flex;
+    border-radius: 8px;
+    padding: 16px 0 0 16px;
+}
+
+.sidebar__navegation .logo img{
+    width: 80px;
+}
+
+.sidebar nav ul{
+    margin-top: 20px;
+    padding: 0 20px 10px 20px;
+}
+
+.sidebar ul li{
+    padding: 10px 0;
+}
+
+.sidebar nav ul li a{
+   color: var(--clear-gray); 
+    font-size: 14px;
+    font-weight: 600;    
+}
+
+.library{
+    background-color: var(--dark-gray);
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 4px 8px;
+    color: var(--clear-gray);
+    font-weight: 600;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.library .library__content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.library .library__button{
+    display: flex;
+    margin-right: 10px;
+    color: var(--clear-gray);
+    background-color: transparent;
+    border: 0;
+    font-size: 14px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: none;
+    padding: 20px 10px;    
+}
+
+.library .library__button .fa{
+    font-size: 20px;
+    margin-left: 10px;
+    /* font-weight: 300; */
+    padding-right: 8px;
+}
+
+.library .library__content .fa-plus{
+    margin: 24px 10px;
+    cursor: pointer;
+}
+
+.section-playlist{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    background-color: var(--dark-gray-02);
+    color: var(--clear-gray);
+    font-weight: 600;
+    font-size: 14px;
+    margin: 8px 0;
+    padding: 16px 20px;
+    border-radius: 10px;
+}
+
+.section-playlist .section-playlist__content{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-playlist__content .text{
+    padding-bottom: 14px;
+    color: var(--white);
+}
+
+.section-playlist__content .title{
+    font-weight: 700;
+}
+
+.section-playlist__content .subtitle{
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.section-playlist__content .section-playlist__button{
+    display: flex;
+    justify-content: center;
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: none;
+    padding: 10px;
+    border: 0;
+    width: 113px;
+    margin-top: 12px;
+}
+
+.sidebar .cookies{
+    margin: 25px 20px;
+}
+
+.sidebar .cookies a{
+    color: var(--clear-gray);
+    font-weight: 500;
+    font-size: 10px;
+}
+
+.sidebar .cookies a:hover{
+    text-decoration: underline;
+}
+
+.languases .languages__button{
+    background-color: transparent;
+    border: 1px solid var(--clear-gray-02);
+    color: var(--white);
+    cursor: pointer;
+    font-weight: bold;
+    align-items: center;
+    width: 170px;
+    margin: 8px;
+    padding: 8px;
+    border-radius: 20px;
+}
+
+.disclaimer-premium{
+    color: var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background: linear-gradient(90deg, var(--color-purple), var(--color-blue));
+    padding: 15px 24px 7px 15px;
+    margin: 10px;
+}
+
+.disclaimer-premium .text {
+    flex-shrink: 0; /* shrink = encolher */
+}
+
+.disclaimer-premium .disclaimer-premium__title{
+    color: var(--white);
+    font-weight: 700;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.disclaimer-premium .disclaimer-premium__subtitle{
+    color: var(--white);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.disclaimer-premium button{
+    font-weight: 700;
+    background-color: var(--white);
+    color: var(--black);
+    font-size: 16px;
+    font-weight: 700;
+    padding: 14px 30px;
+    border: 0px;
+    border-radius: 40px;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: 0.4s ease-in-out;
+    
+}
+
+.disclaimer-premium button:hover{
+    transform: scale(1.05);
+}
+
